@@ -113,7 +113,7 @@ input{
     background-color: rgb(224, 220, 220);
     display: grid;
     grid-template-columns: 1fr 320px;
-    padding: 40px 20px;
+    padding: 40px 20px 30px 20px;
 }
 .projectcontainer{
     display: grid;
@@ -123,11 +123,30 @@ input{
     
 }
 .projectbox{
-    width: 395px;
-    height: 230px;
+    position: relative;
+    width: 335px;
+    height: 180px;
     background-color: white;
     border-radius: 10px;
+    padding: 30px 15px;
+    border-left:solid 10px rgb(216, 170, 20);
 }
+h3{
+    margin: 0;   
+}
+.projectbox>p, .phrase{
+    color: gray;
+}
+.iconbox{
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .sidebartwo{
     display: flex;
     flex-direction: column;
@@ -135,17 +154,42 @@ input{
 }
 .Announcements, .Trending{
     margin: 0;
-    width: 290px;
-    height: 340px;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
 }
 .Announcements{
-    margin-bottom: 13px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h4{
+    font-size: small;
+    margin: 0;
+}
+.annoucemiddle{
+    border-top: solid rgba(128, 128, 128, 0.384) 2px;
+    border-bottom: solid rgba(128, 128, 128, 0.384) 2px;
+    padding: 20px 0px;
+}
+.Announcements>div{
+    justify-content: center;
+}
+.Announcements>div>p{
+    font-size:small;
+    color:grey;
 }
 h2{
     margin-top: 0;
     margin-bottom: 10px;
+}
+.Trending{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
 }
 a,.reficon{
     font-size: 10px;
